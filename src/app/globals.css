@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-deloitte-green: #86BC25;
+  --color-deloitte-green-dark: #6B9A1E;
+  --color-deloitte-green-light: #A8D45A;
+  --color-deloitte-black: #000000;
+  --color-deloitte-gray-900: #1D1D1D;
+  --color-deloitte-gray-700: #53565A;
+  --color-deloitte-gray-400: #97999B;
+  --color-deloitte-gray-200: #D0D0CE;
+  --color-deloitte-gray-100: #F2F2F2;
+  --color-deloitte-white: #FFFFFF;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-deloitte-gray-100);
+  color: var(--color-deloitte-gray-900);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-deloitte-gray-200);
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-deloitte-green);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-deloitte-green);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 3px;
+}
